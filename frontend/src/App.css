@@ -1,0 +1,17 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Police manuscrite */
+.font-handwriting {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Police globale */
+.font-sans {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

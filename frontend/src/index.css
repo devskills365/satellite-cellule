@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #120a2e; /* Évite le flash blanc au chargement */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif; /* Ou votre police préférée */
+}

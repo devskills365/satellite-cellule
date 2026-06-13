@@ -1,0 +1,620 @@
+[2026-01-20 15:50:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:50:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 15:50:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:50:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 15:51:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:51:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 15:55:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:55:25] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 15:55:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:55:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 15:56:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 15:56:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:00:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:00:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:11:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:11:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:11:33] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:11:33] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:13:48] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: {'questionnaire_text': 'Q1: Nom ? (Texte). Q2: Age ? (Nombre).', 'user_email': 'test_local@example.com'}
+[2026-01-20 16:13:48] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'extraction LLM pour test_local@example.com
+[2026-01-20 16:14:30] INFO  | GET  | /api/projects/2554af95-db64-4056-bc4e-295b16f0ac5c | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:17:59] INFO  | GET  | /api/projects/2554af95-db64-4056-bc4e-295b16f0ac5c | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:40:47] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:42:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:42:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:42:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:42:32] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:43:14] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:45:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:45:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:46:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:46:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:46:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:46:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:46:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:46:25] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:46:44] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:46:44] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : BURIDA_ENSEIGNANT_V1.docx pour iriefrancktohbi@gmail.com
+[2026-01-20 16:46:44] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour iriefrancktohbi@gmail.com
+[2026-01-20 16:46:52] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:46:53] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:47:05] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:53:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:53:29] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:53:37] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 16:53:39] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 16:53:43] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:54:32] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:54:33] INFO  | GET  | /api/projects/f8d8cde2-e5a6-401c-bf46-69535085b08f | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:54:52] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:54:52] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : BURIDA_ENSEIGNANT_V1.docx pour devskills365@gmail.com
+[2026-01-20 16:54:53] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour devskills365@gmail.com
+[2026-01-20 16:56:30] INFO  | GET  | /api/projects/7dd4b1e7-6fd9-4c90-b640-43787e1eb2da | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:56:30] INFO  | GET  | /api/projects/7dd4b1e7-6fd9-4c90-b640-43787e1eb2da | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 16:56:35] INFO  | GET  | /api/projects/7dd4b1e7-6fd9-4c90-b640-43787e1eb2da | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:03:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 17:03:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 17:03:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 17:03:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 17:03:53] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:03:53] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : BURIDA_ENSEIGNANT_V1.docx pour iriefrancktohbi@gmail.com
+[2026-01-20 17:03:53] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour iriefrancktohbi@gmail.com
+[2026-01-20 17:05:37] INFO  | GET  | /api/projects/0ab6d146-37b2-4295-b7e9-e8e09a160d5d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:05:38] INFO  | GET  | /api/projects/0ab6d146-37b2-4295-b7e9-e8e09a160d5d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:10:59] INFO  | GET  | /api/projects/0ab6d146-37b2-4295-b7e9-e8e09a160d5d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:21:06] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:21:07] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : quest_test.docx pour devskills365@gmail.com
+[2026-01-20 17:21:07] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour devskills365@gmail.com
+[2026-01-20 17:21:15] INFO  | GET  | /api/projects/cd658ac3-edf5-41dd-8de6-488bf735b93d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:21:15] INFO  | GET  | /api/projects/cd658ac3-edf5-41dd-8de6-488bf735b93d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:22:10] INFO  | GET  | /api/projects/cd658ac3-edf5-41dd-8de6-488bf735b93d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 17:22:25] INFO  | GET  | /api/projects/cd658ac3-edf5-41dd-8de6-488bf735b93d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 19:54:50] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 19:54:50] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : BURIDA_BIBLIO_V1.docx pour devskills365@gmail.com
+[2026-01-20 19:54:51] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour devskills365@gmail.com
+[2026-01-20 20:18:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 20:18:17] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 20:18:27] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 20:18:29] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 20:24:47] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 20:24:49] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 20:26:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-01-20 20:26:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-01-20 20:28:59] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 20:28:59] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Fichier reçu : quest_test.docx pour iriefrancktohbi@gmail.com
+[2026-01-20 20:28:59] INFO  | POST | /api/projects                       | IP: 127.0.0.1       | User: anonymous  | Début de l'analyse IA pour iriefrancktohbi@gmail.com
+[2026-01-20 20:29:08] INFO  | GET  | /api/projects/6e67741e-809d-4b8e-b694-e3c06b432c8d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-01-20 20:29:08] INFO  | GET  | /api/projects/6e67741e-809d-4b8e-b694-e3c06b432c8d | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:12:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-02-16 10:12:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-02-16 10:12:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-02-16 10:12:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-02-16 10:12:41] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-02-16 10:12:41] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-02-16 10:16:59] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:16:59] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:16:59] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:17:01] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:17:01] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:17:01] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:17:01] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:22:19] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:22:19] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:22:20] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:22:20] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:09] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:10] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:10] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:10] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:36] INFO  | OPTIONS | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:36] INFO  | OPTIONS | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:36] INFO  | OPTIONS | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:36] INFO  | OPTIONS | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:37] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:37] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:37] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:23:37] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | OPTIONS | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | OPTIONS | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:47] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:54] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:54] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:54] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:28:54] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:30:50] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 10:30:50] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 11:25:53] INFO  | OPTIONS | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 11:25:53] INFO  | OPTIONS | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 11:25:53] INFO  | GET  | /api/sgi/chapitres                  | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-02-16 11:25:53] INFO  | GET  | /api/sgi/regions                    | IP: 127.0.0.1       | User: anonymous  | Requête API | Body: aucun
+[2026-03-15 14:58:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 14:58:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 14:58:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 14:58:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:01:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:01:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:01:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:01:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:07:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:07:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:08:30] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:08:30] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:08:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:08:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:09:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:09:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:09:40] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:09:40] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:09:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:09:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:13:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:13:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:15:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:15:27] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:21:36] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:21:36] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 15:21:49] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 15:21:49] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:49:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:49:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:49:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:49:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:50:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:50:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:50:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:50:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:52:12] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:52:12] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 17:54:27] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 17:54:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-15 18:05:25] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-15 18:05:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 11:11:58] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 11:11:59] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 11:12:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 11:12:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 11:23:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 11:23:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 11:46:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 11:46:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 13:42:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 13:42:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 13:53:27] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 13:53:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 13:53:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 13:53:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 13:55:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 13:55:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:21:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:21:32] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:23:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:23:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:23:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:23:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:23:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:23:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:23:28] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.381745, -3.945621
+[2026-03-16 14:24:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:24:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:24:18] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.38, -3.94
+[2026-03-16 14:24:43] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-16 14:24:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-16 14:33:50] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.38, -3.94
+[2026-03-22 08:17:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-22 08:17:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-22 08:17:49] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-22 08:17:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-22 08:18:20] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: None, None
+[2026-03-22 08:26:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-22 08:26:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-22 08:26:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-03-22 08:26:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-03-22 08:28:07] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.3601160000000005, -3.9294649999999995
+[2026-04-05 10:34:59] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 10:35:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 10:35:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 10:35:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 10:57:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 10:57:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 10:58:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 10:58:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 10:58:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 10:58:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 11:16:06] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360046308662363, -3.92953849467047
+[2026-04-05 11:20:43] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.36015873067107, -3.929637763098633
+[2026-04-05 12:12:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 12:12:55] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 12:13:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-05 12:13:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-05 12:13:11] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360054666666666, -3.929552333333333
+[2026-04-05 12:20:34] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360054666666666, -3.929552333333333
+[2026-04-05 12:21:01] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.36003093036553, -3.9296236849091284
+[2026-04-05 12:34:45] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360206789513987, -3.9297230151112927
+[2026-04-05 12:42:19] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360372666666666, -3.929658
+[2026-04-05 12:42:46] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360206789513987, -3.9297230151112927
+[2026-04-05 12:43:35] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360244209851632, -3.929633971632047
+[2026-04-05 12:45:52] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.360288875, -3.929662875
+[2026-04-05 12:48:23] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.36006325, -3.9294897499999997
+[2026-04-05 12:48:32] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.36006325, -3.9294897499999997
+[2026-04-05 12:50:00] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.3600375, -3.9296775
+[2026-04-05 12:53:15] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: 5.36003093036553, -3.9296236849091284
+[2026-04-23 17:02:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-23 17:02:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-23 17:02:25] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-23 17:02:26] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-24 10:33:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-24 10:33:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-24 10:33:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-24 10:33:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 19:11:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 19:11:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 19:11:39] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 19:11:40] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 20:18:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 20:18:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 20:22:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 20:22:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 20:23:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 20:23:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 20:24:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 20:24:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 20:25:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 20:25:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:02:08] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:02:08] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:02:11] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:02:12] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:22:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:22:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:23:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:23:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:25:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:25:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:26:30] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': None, 'tableId': None, 'tableNom': None, 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': 'pas de seul', 'sousTotal': 3500}]}
+[2026-04-30 21:26:30] WARNING | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] Champs manquants : ['restaurantId', 'tableId']
+[2026-04-30 21:32:46] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:32:47] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:32:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:32:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:42:42] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}]}
+[2026-04-30 21:42:42] WARNING | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] Restaurant introuvable : resto-bellevue
+[2026-04-30 21:48:58] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:48:58] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:49:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-04-30 21:49:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-04-30 21:49:40] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 18500, 'commentaireGlobal': '', 'items': [{'id': 'p2', 'nom': 'Thiéboudienne', 'prix': 6500, 'quantite': 1, 'note': 'pas de sel', 'sousTotal': 6500}, {'id': 'p3', 'nom': 'Steak de bœuf', 'prix': 12000, 'quantite': 1, 'note': '', 'sousTotal': 12000}]}
+[2026-04-30 21:49:40] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #1 créée — resto-bellevue table T2 (2 article(s), 18500 FCFA)
+[2026-05-01 00:32:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 00:32:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 00:33:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 00:33:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 00:33:09] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 00:33:09] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 00:33:12] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 00:33:41] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 00:37:13] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 00:46:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 00:46:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 00:46:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 00:46:56] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:03:11] INFO  | POST | /api/bo/auth/login                  | IP: 192.168.1.11    | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 01:05:29] INFO  | POST | /api/bo/auth/login                  | IP: 192.168.1.10    | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 01:11:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:11:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:11:27] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:11:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:13:30] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2500, 'commentaireGlobal': '', 'items': [{'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}]}
+[2026-05-01 01:13:30] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #2 créée — resto-bellevue table T2 (1 article(s), 2500 FCFA)
+[2026-05-01 01:15:35] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 5000, 'commentaireGlobal': '', 'items': [{'id': 'p4', 'nom': 'Alloco + Poisson braisé', 'prix': 5000, 'quantite': 1, 'note': '', 'sousTotal': 5000}]}
+[2026-05-01 01:15:35] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #3 créée — resto-bellevue table T2 (1 article(s), 5000 FCFA)
+[2026-05-01 01:15:45] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 1500, 'commentaireGlobal': '', 'items': [{'id': 'e3', 'nom': 'Accra de haricot', 'prix': 1500, 'quantite': 1, 'note': '', 'sousTotal': 1500}]}
+[2026-05-01 01:15:45] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #4 créée — resto-bellevue table T2 (1 article(s), 1500 FCFA)
+[2026-05-01 01:15:55] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 300, 'commentaireGlobal': '', 'items': [{'id': 's2', 'nom': 'Pain', 'prix': 300, 'quantite': 1, 'note': '', 'sousTotal': 300}]}
+[2026-05-01 01:15:55] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #5 créée — resto-bellevue table T2 (1 article(s), 300 FCFA)
+[2026-05-01 01:16:04] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 1300, 'commentaireGlobal': '', 'items': [{'id': 'b2', 'nom': 'Eau minérale', 'prix': 500, 'quantite': 1, 'note': '', 'sousTotal': 500}, {'id': 'b3', 'nom': 'Coca-Cola', 'prix': 800, 'quantite': 1, 'note': '', 'sousTotal': 800}]}
+[2026-05-01 01:16:04] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #6 créée — resto-bellevue table T2 (2 article(s), 1300 FCFA)
+[2026-05-01 01:27:47] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:27:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:27:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:27:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:32:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:32:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:32:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 01:32:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 01:45:46] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 02:12:20] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 16500, 'commentaireGlobal': '', 'items': [{'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}, {'id': 'p1', 'nom': 'Poulet Kedjenou', 'prix': 7500, 'quantite': 1, 'note': 'grattin', 'sousTotal': 7500}, {'id': 'p2', 'nom': 'Thiéboudienne', 'prix': 6500, 'quantite': 1, 'note': '', 'sousTotal': 6500}]}
+[2026-05-01 02:12:21] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #7 créée — resto-bellevue table T2 (3 article(s), 16500 FCFA)
+[2026-05-01 02:12:48] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}]}
+[2026-05-01 02:12:48] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #8 créée — resto-bellevue table T2 (1 article(s), 3500 FCFA)
+[2026-05-01 02:13:08] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 6000, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}, {'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}]}
+[2026-05-01 02:13:08] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #9 créée — resto-bellevue table T2 (2 article(s), 6000 FCFA)
+[2026-05-01 02:18:07] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 1000, 'commentaireGlobal': '', 'items': [{'id': 's3', 'nom': 'Portion de frites', 'prix': 1000, 'quantite': 1, 'note': '', 'sousTotal': 1000}]}
+[2026-05-01 02:18:07] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #10 créée — resto-bellevue table T2 (1 article(s), 1000 FCFA)
+[2026-05-01 02:18:17] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2500, 'commentaireGlobal': '', 'items': [{'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}]}
+[2026-05-01 02:18:17] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #11 créée — resto-bellevue table T2 (1 article(s), 2500 FCFA)
+[2026-05-01 02:18:24] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 700, 'commentaireGlobal': '', 'items': [{'id': 's4', 'nom': 'Salade verte', 'prix': 700, 'quantite': 1, 'note': '', 'sousTotal': 700}]}
+[2026-05-01 02:18:24] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #12 créée — resto-bellevue table T2 (1 article(s), 700 FCFA)
+[2026-05-01 02:20:36] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2500, 'commentaireGlobal': '', 'items': [{'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}]}
+[2026-05-01 02:20:36] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #13 créée — resto-bellevue table T2 (1 article(s), 2500 FCFA)
+[2026-05-01 03:06:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 03:06:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 03:07:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 03:07:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 03:19:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 03:19:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 03:19:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 03:19:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 03:36:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 03:36:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 03:45:49] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2300, 'commentaireGlobal': '', 'items': [{'id': 's4', 'nom': 'Salade verte', 'prix': 700, 'quantite': 1, 'note': 'Sans oignon', 'sousTotal': 700}, {'id': 's2', 'nom': 'Pain', 'prix': 300, 'quantite': 1, 'note': 'Demi', 'sousTotal': 300}, {'id': 'b2', 'nom': 'Eau minérale', 'prix': 500, 'quantite': 1, 'note': 'Celeste', 'sousTotal': 500}, {'id': 'b3', 'nom': 'Coca-Cola', 'prix': 800, 'quantite': 1, 'note': '33 cl', 'sousTotal': 800}]}
+[2026-05-01 03:45:49] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #14 créée — resto-bellevue table T2 (4 article(s), 2300 FCFA)
+[2026-05-01 04:04:08] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 04:09:13] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 04:14:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 04:14:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 04:14:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 04:14:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 04:18:10] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 04:21:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 04:21:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 04:27:46] INFO  | GET  | /api/bo/s3/generate-url             | IP: 127.0.0.1       | User: anonymous  | [BO S3] URL générée pour menu/9a815c3e3c354e3eb41e560190c6a36d.jpg (image/jpeg)
+[2026-05-01 04:33:33] INFO  | GET  | /api/bo/s3/generate-url             | IP: 127.0.0.1       | User: anonymous  | [BO S3] URL générée pour menu/2e36fa5d0999482f82b2ac5edb0594d5.jpg (image/jpeg)
+[2026-05-01 04:40:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 04:40:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 04:40:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 04:40:54] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 04:41:21] ERROR | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Erreur upload : An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+[2026-05-01 04:41:21] ERROR | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Erreur upload sans ACL : I/O operation on closed file.
+[2026-05-01 04:55:22] ERROR | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Erreur upload : An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+[2026-05-01 04:55:22] ERROR | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Erreur upload sans ACL : I/O operation on closed file.
+[2026-05-01 05:02:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:02:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:02:58] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:02:58] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:03:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:03:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:03:31] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/206d0b5f683f4e589bc63b2111f441cf.jpg
+[2026-05-01 05:12:59] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:13:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:20:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:20:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:21:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:21:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:21:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:21:20] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:21:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:21:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:30:41] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/9ccde62652654f6c86f58dd537be4f19.jpg
+[2026-05-01 05:39:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:39:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:40:25] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/2fff3c028706491d804463cf3237777a.jpg
+[2026-05-01 05:40:40] INFO  | POST | /api/bo/menu/articles               | IP: 127.0.0.1       | User: anonymous  | [ARTICLE CREATE] {'nom': 'Foutou Igname', 'description': '', 'prix': 2000, 'categorie_id': 'plats', 'disponible': True, 'populaire': False, 'image': None, 'image_url': 'https://photos-inscription-sgi-ci.s3.eu-north-1.amazonaws.com/menu/2fff3c028706491d804463cf3237777a.jpg', 'id': 'art-1777606839714'}
+[2026-05-01 05:42:53] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:42:53] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:43:40] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:43:40] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:44:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 05:44:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 05:45:04] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/c42c532b8dfa42109851dc83c5d61321.jpg
+[2026-05-01 05:45:19] INFO  | POST | /api/bo/menu/articles               | IP: 127.0.0.1       | User: anonymous  | [ARTICLE CREATE] {'nom': 'Foutou', 'description': '', 'prix': 1000, 'categorie_id': 'plats', 'disponible': True, 'populaire': False, 'image': None, 'image_url': 'https://photos-inscription-sgi-ci.s3.eu-north-1.amazonaws.com/menu/c42c532b8dfa42109851dc83c5d61321.jpg', 'id': 'art-1777607119628'}
+[2026-05-01 05:59:36] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2000, 'commentaireGlobal': '', 'items': [{'id': 'art-1777606839714', 'nom': 'Foutou Igname', 'prix': 2000, 'quantite': 1, 'note': 'Graine avec viande', 'sousTotal': 2000}]}
+[2026-05-01 05:59:36] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #15 créée — resto-bellevue table T2 (1 article(s), 2000 FCFA)
+[2026-05-01 06:02:34] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/2af6d4e970ab438d922c219172b3a574.jpg
+[2026-05-01 06:03:34] INFO  | POST | /api/bo/menu/articles               | IP: 127.0.0.1       | User: anonymous  | [ARTICLE CREATE] {'nom': 'Foutou Banane + Graine/arachide/Gouagousss +Viande brouse', 'description': '', 'prix': 2000, 'categorie_id': 'plats', 'disponible': True, 'populaire': False, 'image': None, 'image_url': 'https://photos-inscription-sgi-ci.s3.eu-north-1.amazonaws.com/menu/2af6d4e970ab438d922c219172b3a574.jpg', 'id': 'art-1777608213511'}
+[2026-05-01 06:07:06] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2000, 'commentaireGlobal': '', 'items': [{'id': 'art-1777608213511', 'nom': 'Foutou Banane + Graine/arachide/Gouagousss +Viande brouse', 'prix': 2000, 'quantite': 1, 'note': 'sauce arachide', 'sousTotal': 2000}]}
+[2026-05-01 06:07:06] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #16 créée — resto-bellevue table T2 (1 article(s), 2000 FCFA)
+[2026-05-01 11:15:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:15:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:15:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:15:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:37:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:37:31] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:37:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:37:35] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:39:03] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/822dab1a77184ed0a9a70def0a91ff0b.webp
+[2026-05-01 11:40:10] INFO  | POST | /api/bo/menu/articles               | IP: 127.0.0.1       | User: anonymous  | [ARTICLE CREATE] {'nom': 'Coca cola', 'description': '', 'prix': 700, 'categorie_id': 'boissons', 'disponible': True, 'populaire': False, 'image': None, 'image_url': 'https://photos-inscription-sgi-ci.s3.eu-north-1.amazonaws.com/menu/822dab1a77184ed0a9a70def0a91ff0b.webp', 'id': 'art-1777628409572'}
+[2026-05-01 11:42:52] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2100, 'commentaireGlobal': '', 'items': [{'id': 'art-1777628409572', 'nom': 'Coca cola', 'prix': 700, 'quantite': 3, 'note': '', 'sousTotal': 2100}]}
+[2026-05-01 11:42:52] INFO  | POST | /api/commandes                      | IP: 192.168.1.10    | User: anonymous  | [COMMANDE PUBLIC] #17 créée — resto-bellevue table T2 (1 article(s), 2100 FCFA)
+[2026-05-01 11:58:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:58:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:58:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 11:58:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 11:58:43] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2000, 'commentaireGlobal': '', 'items': [{'id': 'art-1777606839714', 'nom': 'Foutou Igname', 'prix': 2000, 'quantite': 1, 'note': '', 'sousTotal': 2000}]}
+[2026-05-01 11:58:43] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #18 créée — resto-bellevue table T2 (1 article(s), 2000 FCFA)
+[2026-05-01 12:00:27] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}]}
+[2026-05-01 12:00:27] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #19 créée — resto-bellevue table T2 (1 article(s), 3500 FCFA)
+[2026-05-01 12:07:08] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 2000, 'commentaireGlobal': '', 'items': [{'id': 'art-1777608213511', 'nom': 'Foutou Banane + Graine/arachide/Gouagousss +Viande brouse', 'prix': 2000, 'quantite': 1, 'note': '', 'sousTotal': 2000}]}
+[2026-05-01 12:07:08] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #20 créée — resto-bellevue table T2 (1 article(s), 2000 FCFA)
+[2026-05-01 12:10:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:10:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:17:12] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}]}
+[2026-05-01 12:17:12] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #21 créée — resto-bellevue table T2 (1 article(s), 3500 FCFA)
+[2026-05-01 12:24:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:24:03] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:30:28] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-01 12:30:47] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T2', 'tableNom': 'Table T2', 'totalPrix': 700, 'commentaireGlobal': '', 'items': [{'id': 's4', 'nom': 'Salade verte', 'prix': 700, 'quantite': 1, 'note': '', 'sousTotal': 700}]}
+[2026-05-01 12:30:47] INFO  | POST | /api/commandes                      | IP: 192.168.1.11    | User: anonymous  | [COMMANDE PUBLIC] #22 créée — resto-bellevue table T2 (1 article(s), 700 FCFA)
+[2026-05-01 12:40:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:40:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:40:53] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:40:53] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:41:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:41:17] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:41:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:41:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:45:43] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:45:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:45:47] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 12:45:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 12:54:43] INFO  | POST | /api/bo/staff                       | IP: 127.0.0.1       | User: anonymous  | [BO Staff] Compte créé : devskills365@gmail.com (serveur)
+[2026-05-01 13:01:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:01:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 13:04:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:04:16] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #21 statut=prete lignes=1
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #19 statut=recue lignes=1
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #15 statut=recue lignes=1
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #14 statut=recue lignes=4
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #10 statut=prete lignes=1
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #9 statut=prete lignes=2
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #8 statut=prete lignes=1
+[2026-05-01 13:06:32] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #3 statut=en_cuisine lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #21 statut=prete lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #19 statut=recue lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #15 statut=recue lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #14 statut=recue lignes=4
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #10 statut=prete lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #9 statut=prete lignes=2
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #8 statut=prete lignes=1
+[2026-05-01 13:06:47] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #3 statut=en_cuisine lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #21 statut=prete lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #19 statut=recue lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #15 statut=recue lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #14 statut=recue lignes=4
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #10 statut=prete lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #9 statut=prete lignes=2
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #8 statut=prete lignes=1
+[2026-05-01 13:07:08] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #3 statut=en_cuisine lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #21 statut=prete lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #19 statut=recue lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #15 statut=recue lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #14 statut=recue lignes=4
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #10 statut=prete lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #9 statut=prete lignes=2
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #8 statut=prete lignes=1
+[2026-05-01 13:07:21] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #3 statut=prete lignes=1
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #21 statut=prete lignes=1
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #19 statut=recue lignes=1
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #15 statut=recue lignes=1
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #14 statut=recue lignes=4
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #10 statut=prete lignes=1
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #9 statut=prete lignes=2
+[2026-05-01 13:07:26] INFO  | GET  | /api/bo/tables/T2                   | IP: 127.0.0.1       | User: anonymous  |   #8 statut=prete lignes=1
+[2026-05-01 13:15:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:15:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 13:15:09] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:15:10] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 13:16:37] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/f231e02be99a479c9f48a187f12a2ee0.jpg
+[2026-05-01 13:19:00] INFO  | PUT  | /api/bo/restaurant                  | IP: 127.0.0.1       | User: anonymous  | [BO] Restaurant resto-bellevue mis à jour
+[2026-05-01 13:46:38] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:46:39] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 13:46:42] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 13:46:43] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 14:02:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 14:02:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 14:02:51] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 14:02:52] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 14:07:23] INFO  | POST | /api/admin/restaurants              | IP: 127.0.0.1       | User: anonymous  | [ADMIN] Restaurant créé : palm-resto-complex — Délice du Jardin
+[2026-05-01 14:08:35] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: konate@gmail.com (gerant)
+[2026-05-01 14:09:05] INFO  | PUT  | /api/bo/restaurant                  | IP: 127.0.0.1       | User: anonymous  | [BO] Restaurant palm-resto-complex mis à jour
+[2026-05-01 14:09:26] INFO  | PUT  | /api/bo/restaurant                  | IP: 127.0.0.1       | User: anonymous  | [BO] Restaurant palm-resto-complex mis à jour
+[2026-05-01 14:10:27] INFO  | POST | /api/bo/s3/upload                   | IP: 127.0.0.1       | User: anonymous  | [BO S3] Upload réussi : menu/7877f470ea1f40ebbc2dffc89c7db9a8.webp
+[2026-05-01 14:38:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 14:38:08] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 14:38:12] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-01 14:38:12] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-01 14:39:11] INFO  | POST | /api/admin/restaurants              | IP: 127.0.0.1       | User: anonymous  | [ADMIN] Restaurant créé : tester — Test Complex (5 catégories initialisées)
+[2026-05-01 14:41:22] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: test@test.com (gerant)
+[2026-05-02 02:20:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:20:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 02:20:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:20:23] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 02:25:41] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:25:41] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 02:25:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:25:44] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 02:29:45] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-02 02:30:38] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T1', 'tableNom': 'Table T1', 'totalPrix': 6000, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}, {'id': 'e2', 'nom': 'Soupe de poisson', 'prix': 2500, 'quantite': 1, 'note': '', 'sousTotal': 2500}]}
+[2026-05-02 02:30:38] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #23 créée — resto-bellevue table T1 (2 article(s), 6000 FCFA)
+[2026-05-02 02:31:04] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T1', 'tableNom': 'Table T1', 'totalPrix': 5800, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}, {'id': 'b3', 'nom': 'Coca-Cola', 'prix': 800, 'quantite': 1, 'note': '', 'sousTotal': 800}, {'id': 'b5', 'nom': 'Bière Flag', 'prix': 1500, 'quantite': 1, 'note': '', 'sousTotal': 1500}]}
+[2026-05-02 02:31:04] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #24 créée — resto-bellevue table T1 (3 article(s), 5800 FCFA)
+[2026-05-02 02:31:24] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T1', 'tableNom': 'Table T1', 'totalPrix': 1900, 'commentaireGlobal': '', 'items': [{'id': 'b4', 'nom': 'Jus de gingembre', 'prix': 1200, 'quantite': 1, 'note': '', 'sousTotal': 1200}, {'id': 's4', 'nom': 'Salade verte', 'prix': 700, 'quantite': 1, 'note': '', 'sousTotal': 700}]}
+[2026-05-02 02:31:24] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #25 créée — resto-bellevue table T1 (2 article(s), 1900 FCFA)
+[2026-05-02 02:32:29] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] payload reçu : {'restaurantId': 'resto-bellevue', 'tableId': 'T1', 'tableNom': 'Table T1', 'totalPrix': 3500, 'commentaireGlobal': '', 'items': [{'id': 'e1', 'nom': 'Salade Niçoise', 'prix': 3500, 'quantite': 1, 'note': '', 'sousTotal': 3500}]}
+[2026-05-02 02:32:29] INFO  | POST | /api/commandes                      | IP: 127.0.0.1       | User: anonymous  | [COMMANDE PUBLIC] #26 créée — resto-bellevue table T1 (1 article(s), 3500 FCFA)
+[2026-05-02 02:54:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:54:57] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 02:55:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 02:55:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 14:53:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 14:53:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 14:53:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 14:53:18] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 14:56:55] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 14:56:55] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 14:57:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 14:57:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 14:57:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 14:57:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 15:07:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 15:07:46] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 15:07:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 15:07:50] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 15:13:04] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.381727185434041, lon=-3.945627162508019, type=satellite
+[2026-05-02 16:10:41] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:10:42] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:10:45] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:10:46] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:14:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:14:48] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:15:01] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:15:02] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:15:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:15:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:18:10] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:18:11] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 16:18:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 16:18:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 21:53:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 21:53:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 21:53:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-02 21:53:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-02 21:56:01] INFO  | POST | /api/bo/auth/login                  | IP: 127.0.0.1       | User: anonymous  | BO Login: gerant@bellevue.ci (gerant)
+[2026-05-04 01:45:59] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 01:46:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 01:46:06] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 01:46:07] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:25:59] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:26:00] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:26:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:26:05] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:46:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:46:28] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:46:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:46:34] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:57:14] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:57:15] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:57:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:57:19] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:59:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:59:13] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-04 02:59:17] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-04 02:59:17] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-09 10:31:21] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-09 10:31:22] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-09 10:31:30] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-09 10:31:32] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-15 01:04:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-15 01:04:24] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-15 01:04:29] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-15 01:04:30] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-17 12:06:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-17 12:06:04] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-05-17 12:06:08] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | S3_REGION: eu-north-1
+[2026-05-17 12:06:08] INFO  | N/A  | N/A                                 | IP: N/A             | User: system     | Connexion S3 réussie
+[2026-06-07 16:03:10] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.3598360000000005, lon=-3.9293703333333334, type=cellule
+[2026-06-07 16:03:18] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.3598360000000005, lon=-3.9293703333333334, type=satellite
+[2026-06-07 16:17:07] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.36003504379562, lon=-3.9293235282667816, type=cellule
+[2026-06-07 16:17:09] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.36003504379562, lon=-3.9293235282667816, type=cellule
+[2026-06-07 16:17:10] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.36003504379562, lon=-3.9293235282667816, type=cellule
+[2026-06-07 16:17:10] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.36003504379562, lon=-3.9293235282667816, type=cellule
+[2026-06-07 16:17:11] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.36003504379562, lon=-3.9293235282667816, type=cellule
+[2026-06-07 16:17:23] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.35997175, lon=-3.929405, type=cellule
+[2026-06-07 16:17:28] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.35997175, lon=-3.929405, type=satellite
+[2026-06-07 16:17:29] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.35997175, lon=-3.929405, type=satellite
+[2026-06-07 16:17:31] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.35997175, lon=-3.929405, type=satellite
+[2026-06-07 16:17:32] INFO  | GET  | /api/wsf/cells                      | IP: 127.0.0.1       | User: anonymous  | GPS Request: lat=5.35997175, lon=-3.929405, type=satellite
