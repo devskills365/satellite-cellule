@@ -25,7 +25,7 @@ function AppContent() {
         {/* ══════════════════════════════════════════
             WINNERS CHAPEL (WSF)
         ══════════════════════════════════════════ */}
-        <Route path="/wsf" element={<WSFLocatorPage />} />
+        <Route path="" element={<WSFLocatorPage />} />
         <Route path="/wsf/cells/new" element={<WSFPageFormCell />} />
         <Route path="/wsf/programmes" element={<WSFProgrammePage />} />
         

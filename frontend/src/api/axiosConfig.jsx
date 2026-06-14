@@ -11,9 +11,8 @@ const isLocalhost = (
   window.location.hostname === '0.0.0.0'
 );
 
-const baseURL = isLocalhost
-  ? `http://localhost:5000/api`
-  : (import.meta.env.VITE_API_BASE_URL || `${window.location.origin}/api`);
+const baseURL = `https://api.wciakouedoabidjan.org/api`;
+
 
 console.log('[axiosConfig] baseURL =', baseURL);
 
