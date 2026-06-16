@@ -1,14 +1,125 @@
 // src/pages/wsf/WSFLocatorPage.jsx
 import React, { useState, useMemo } from 'react';
-import { MapPin, Navigation, Phone, LocateFixed, Home, Radio, Clock } from 'lucide-react';
+import { MapPin, Navigation, Phone, LocateFixed, Home, Radio, Clock, Globe } from 'lucide-react';
 import { wsfService } from '../../api/axiosConfig';
 import AnimatedBackground from '../../components/wsf/AnimatedBackground';
 import { toast } from 'react-hot-toast';
 
-// ── Calcul semaine d'élargissement ────────────────────────────────────────────
+// ── Traductions ──────────────────────────────────────────────────────────────
 
-// Première semaine complète (mer-jeu-ven) du mois suivant le mois de référence.
-// Si le mercredi est le 1er du mois → semaine à cheval → on prend la deuxième.
+const translations = {
+  fr: {
+    title: "Répertoire Officiel",
+    churchName: "WINNERS' CHAPEL INTERNATIONAL",
+    location: "AKOUEDO-GOSHEN",
+    cells: "Cellules",
+    satellites: "Satellites",
+    findNearby: "Trouver un {type} proche",
+    searching: "Recherche des {type}...",
+    nearby: "{type} à proximité",
+    noneFound: "Aucun {type} trouvé à proximité.",
+    leader: "Leader",
+    call: "Appeler",
+    route: "Itinéraire",
+    numberUnavailable: "Numéro indisponible.",
+    coordinatesUnavailable: "Coordonnées indisponibles.",
+    geolocationNotSupported: "Votre navigateur ne supporte pas la géolocalisation.",
+    unableToFetch: "Impossible de récupérer les données.",
+    permissionDenied: "Accès refusé. Veuillez autoriser la localisation.",
+    gpsUnavailable: "Signal GPS introuvable.",
+    timeout: "La demande a expiré.",
+    gpsError: "Une erreur GPS est survenue.",
+    allSaturdays: "Tous les samedis",
+    allWednesdays: "Tous les mercredis",
+    spiritualWeek: "Semaine d'élargissement spirituel",
+    thursday: "Jeudi",
+    friday: "Vendredi",
+    fromYou: "de vous",
+    footer: "Jesus is Lord - AKOUEDO-Goshen @2026",
+    language: "Langue",
+    french: "Français",
+    english: "English",
+    descriptions: {
+      "Au sein du Foyer des jeunes de Adjahui": "Au sein du Foyer des jeunes de Adjahui",
+      "Dans le centre Marie Rose Guiraud": "Dans le centre Marie Rose Guiraud",
+      "Au sein de la cantine de l'école primaire publique D'ANAN": "Au sein de la cantine de l'école primaire publique D'ANAN",
+      "Au sein du foyer des jeunes d'Adjahui": "Au sein du foyer des jeunes d'Adjahui",
+      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées": "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées",
+      "Au sein du Collège Jean Paul Sartre": "Au sein du Collège Jean Paul Sartre",
+      "Abatta village au sein de l'école privée Kimyl School": "Abatta village au sein de l'école privée Kimyl School",
+      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP": "Au sein du restaurant Canaan Repas non loin de la policlinique GMP",
+      "Au sein du collège privé Mère Elisa d'Akouédo": "Au sein du collège privé Mère Elisa d'Akouédo",
+      "Au sein de l'ancienne Chefferie d'Anoumanbo": "Au sein de l'ancienne Chefferie d'Anoumanbo",
+      "au sein du centre pilote de port bouet": "au sein du centre pilote de port bouet",
+      "Au bas de l'immeuble de l'ancien Red Bar": "Au bas de l'immeuble de l'ancien Red Bar"
+    }
+  },
+  en: {
+    title: "Official Directory",
+    churchName: "WINNERS' CHAPEL INTERNATIONAL",
+    location: "AKOUEDO-GOSHEN",
+    cells: "Cells",
+    satellites: "Satellites",
+    findNearby: "Find a {type} nearby",
+    searching: "Searching for {type}...",
+    nearby: "{type} nearby",
+    noneFound: "No {type} found nearby.",
+    leader: "Leader",
+    call: "Call",
+    route: "Route",
+    numberUnavailable: "Number unavailable.",
+    coordinatesUnavailable: "Coordinates unavailable.",
+    geolocationNotSupported: "Your browser does not support geolocation.",
+    unableToFetch: "Unable to fetch data.",
+    permissionDenied: "Access denied. Please allow location access.",
+    gpsUnavailable: "GPS signal not found.",
+    timeout: "Request timed out.",
+    gpsError: "A GPS error occurred.",
+    allSaturdays: "Every Saturday",
+    allWednesdays: "Every Wednesday",
+    spiritualWeek: "Spiritual Enlargement Week",
+    thursday: "Thursday",
+    friday: "Friday",
+    fromYou: "from you",
+    footer: "Jesus is Lord - AKOUEDO-Goshen @2026",
+    language: "Language",
+    french: "Français",
+    english: "English",
+    descriptions: {
+      "Au sein du Foyer des jeunes de Adjahui": "At the Adjahui Youth Center",
+      "Dans le centre Marie Rose Guiraud": "In the Marie Rose Guiraud center",
+      "Au sein de la cantine de l'école primaire publique D'ANAN": "At the D'ANAN public primary school cafeteria",
+      "Au sein du foyer des jeunes d'Adjahui": "At the Adjahui youth center",
+      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées": "At Wellbeing Resort, next to the Scarabées school group",
+      "Au sein du Collège Jean Paul Sartre": "At the Jean Paul Sartre College",
+      "Abatta village au sein de l'école privée Kimyl School": "Abatta village at Kimyl School private school",
+      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP": "At Canaan Repas restaurant, near the GMP polyclinic",
+      "Au sein du collège privé Mère Elisa d'Akouédo": "At Mère Elisa private college in Akouédo",
+      "Au sein de l'ancienne Chefferie d'Anoumanbo": "At the former Anoumanbo Chiefdom",
+      "au sein du centre pilote de port bouet": "at the Port Bouet pilot center",
+      "Au bas de l'immeuble de l'ancien Red Bar": "At the bottom of the old Red Bar building"
+    }
+  }
+};
+
+// ── Utilitaires ──────────────────────────────────────────────────────────────
+
+function translateDescription(description, lang) {
+  if (!description) return null;
+  if (lang === 'fr') return description;
+  return translations[lang].descriptions[description] || description;
+}
+
+function formatPhoneNumber(phone) {
+  if (!phone) return null;
+  let cleaned = phone.replace(/[\s\-()]/g, '');
+  if (cleaned.startsWith('+225')) return cleaned;
+  if (cleaned.startsWith('225')) return '+' + cleaned;
+  if (cleaned.startsWith('0')) return '+225' + cleaned.substring(1);
+  if (cleaned.length === 10 && /^[0-9]{10}$/.test(cleaned)) return '+225' + cleaned;
+  return cleaned;
+}
+
 function getElargissementWeek(year, month) {
   const nm = (month + 1) % 12;
   const ny = month === 11 ? year + 1 : year;
@@ -23,70 +134,172 @@ function getElargissementWeek(year, month) {
   ];
 }
 
-function fmtDay(date) {
-  return date.toLocaleDateString('fr-FR', { day: '2-digit', month: 'short' });
+function fmtDay(date, lang = 'fr') {
+  const options = { day: '2-digit', month: 'short' };
+  return date.toLocaleDateString(lang === 'en' ? 'en-US' : 'fr-FR', options);
 }
 
-// ── Bandeaux d'horaire ────────────────────────────────────────────────────────
+function fmtDayName(date, lang = 'fr') {
+  return date.toLocaleDateString(lang === 'en' ? 'en-US' : 'fr-FR', { weekday: 'long' });
+}
 
-function ScheduleBanner({ isSatellite }) {
+// ── Bandeau horaire ───────────────────────────────────────────────────────────
+
+function ScheduleBanner({ isSatellite, lang }) {
   const now = new Date();
   const [, jeudi, vendredi] = useMemo(
     () => getElargissementWeek(now.getFullYear(), now.getMonth()),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
+  const t = translations[lang];
 
   if (!isSatellite) {
     return (
-      <div className="flex items-center justify-between gap-3 bg-white border border-gray-200 rounded-2xl px-4 py-3 mb-5 shadow-sm">
+      <div className="flex items-center justify-between gap-2 bg-white/95 backdrop-blur-sm border border-white/30 rounded-xl px-3 py-2.5 mb-4 shadow-sm">
         <div className="flex items-center gap-2">
-          <Home size={14} className="text-brand-winnersRed shrink-0" />
-          <span className="text-gray-800 text-xs font-bold">Tous les samedis</span>
+          <Home size={13} className="text-brand-winnersRed shrink-0" />
+          <span className="text-gray-800 text-[11px] font-bold">{t.allSaturdays}</span>
         </div>
-        <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersRed/15 text-brand-winnersRed whitespace-nowrap">
-          <Clock size={10} /> 17h00 – 18h00
+        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersRed/12 text-brand-winnersRed whitespace-nowrap">
+          <Clock size={9} /> 17h00 – 18h00
         </span>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col gap-2 mb-5">
-      {/* Mercredi régulier */}
-      <div className="flex items-center justify-between gap-3 bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-sm">
+    <div className="flex flex-col gap-2 mb-4">
+      <div className="flex items-center justify-between gap-2 bg-white/95 backdrop-blur-sm border border-white/30 rounded-xl px-3 py-2.5 shadow-sm">
         <div className="flex items-center gap-2">
-          <Radio size={14} className="text-brand-winnersNavy shrink-0" />
-          <span className="text-gray-800 text-xs font-bold">Tous les mercredis</span>
+          <Radio size={13} className="text-brand-winnersNavy shrink-0" />
+          <span className="text-gray-800 text-[11px] font-bold">{t.allWednesdays}</span>
         </div>
-        <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersNavy/10 text-brand-winnersNavy whitespace-nowrap">
-          <Clock size={10} /> 18h00 – 20h00
+        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersNavy/10 text-brand-winnersNavy whitespace-nowrap">
+          <Clock size={9} /> 18h00 – 20h00
         </span>
       </div>
 
-      {/* Élargissement */}
-      <div className="bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-sm">
-        <p className="text-gray-500 text-[10px] font-black uppercase tracking-wider mb-2">
-          Semaine d'élargissement spirituel
+      <div className="bg-white/95 backdrop-blur-sm border border-white/30 rounded-xl px-3 py-2.5 shadow-sm">
+        <p className="text-gray-400 text-[8px] font-black uppercase tracking-widest mb-2">
+          {t.spiritualWeek}
         </p>
         <div className="flex flex-col gap-1.5">
-          <div className="flex items-center justify-between gap-3">
-            <span className="text-gray-800 text-xs font-semibold capitalize">
-              Jeudi {fmtDay(jeudi)}
-            </span>
-            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 whitespace-nowrap">
-              <Clock size={10} /> 18h00 – 20h00
-            </span>
-          </div>
-          <div className="flex items-center justify-between gap-3">
-            <span className="text-gray-800 text-xs font-semibold capitalize">
-              Vendredi {fmtDay(vendredi)}
-            </span>
-            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 whitespace-nowrap">
-              <Clock size={10} /> 18h00 – 20h00
-            </span>
+          {[jeudi, vendredi].map((day) => (
+            <div key={day.getTime()} className="flex items-center justify-between gap-2">
+              <span className="text-gray-800 text-[11px] font-semibold capitalize">
+                {fmtDayName(day, lang)} {fmtDay(day, lang)}
+              </span>
+              <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 whitespace-nowrap">
+                <Clock size={9} /> 18h00 – 20h00
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Carte de résultat ─────────────────────────────────────────────────────────
+
+function CellCard({ cell, isSatellite, userPosition, lang, t }) {
+  const lat         = cell.lat      || cell.latitude;
+  const lng         = cell.lng      || cell.longitude;
+  const nom         = cell.nom      || cell.nom_cellule;
+  const quartier    = cell.quartier || "Quartier non spécifié";
+  const description = cell.description_position || null;
+  const translatedDescription = description ? translateDescription(description, lang) : null;
+  const leader      = cell.responsables?.find(r => r.role === 'leader') || cell.responsables?.[0];
+  const rawTel      = leader?.telephone || null;
+  const tel         = rawTel ? formatPhoneNumber(rawTel) : null;
+  const distance    = cell.distance_km;
+
+  const accentRed  = 'text-brand-winnersRed';
+  const accentBlue = 'text-[#1A5276]';
+  const accent     = isSatellite ? accentBlue : accentRed;
+  const descBg     = isSatellite ? 'bg-blue-50' : 'bg-red-50';
+
+  return (
+    <div className="bg-white rounded-2xl p-4 shadow-lg border border-white/80 animate-in fade-in slide-in-from-bottom-3 duration-400">
+
+      {/* En-tête */}
+      <div className="flex items-center gap-3 mb-3">
+        <div className="w-9 h-9 rounded-xl bg-brand-winnersNavy/6 flex items-center justify-center text-brand-winnersNavy shrink-0">
+          {isSatellite ? <Radio size={17} /> : <Home size={17} />}
+        </div>
+        <div className="flex-1 min-w-0">
+          <h4 className="text-brand-winnersNavy font-black text-sm leading-tight tracking-tight uppercase truncate">
+            {nom}
+          </h4>
+          <div className="flex items-center gap-1 mt-0.5">
+            <MapPin size={9} className={`${accent} shrink-0`} />
+            <p className={`text-[9px] font-black uppercase tracking-wider truncate ${accent}`}>
+              {quartier}
+            </p>
           </div>
         </div>
+        {distance !== undefined && (
+          <div className="bg-brand-winnersNavy rounded-xl px-2.5 py-2 text-center shrink-0">
+            <span className="text-brand-winnersGold font-black text-sm leading-none block">
+              {distance < 1 ? `${Math.round(distance * 1000)} m` : `${distance.toFixed(1)} km`}
+            </span>
+            <span className="text-white/50 text-[7px] uppercase tracking-wide block mt-0.5">{t.fromYou}</span>
+          </div>
+        )}
+      </div>
+
+      {/* Description */}
+      {translatedDescription && (
+        <div className={`${descBg} rounded-lg px-3 py-2 mb-3`}>
+          <p className="text-brand-winnersNavy text-[10px] font-semibold leading-relaxed">
+            {translatedDescription}
+          </p>
+        </div>
+      )}
+
+      {/* Leader */}
+      {leader?.nom_complet && (
+        <div className="flex items-center gap-2.5 pb-3 border-b border-gray-100 mb-3">
+          <div className="w-7 h-7 rounded-full bg-brand-winnersNavy flex items-center justify-center text-xs shrink-0 select-none">
+            👤
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-[7px] text-gray-400 font-bold uppercase tracking-widest">{t.leader}</p>
+            <p className="text-brand-winnersNavy text-[11px] font-black truncate">{leader.nom_complet}</p>
+            {tel && (
+              <p className="text-[9px] text-gray-400 font-medium mt-0.5">{tel}</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Actions */}
+      <div className="grid grid-cols-2 gap-2">
+        <a
+          href={tel ? `tel:${tel}` : '#'}
+          onClick={!tel ? (e) => { e.preventDefault(); toast.error(t.numberUnavailable); } : undefined}
+          className={`flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide transition-colors ${
+            tel ? 'bg-gray-100 text-gray-600 hover:bg-gray-200' : 'bg-gray-100/60 text-gray-300 cursor-not-allowed'
+          }`}
+        >
+          <Phone size={11} /> {t.call}
+        </a>
+        <button
+          onClick={() => {
+            if (lat && lng && userPosition) {
+              window.open(
+                `https://www.google.com/maps/dir/?api=1&origin=${userPosition.lat},${userPosition.lng}&destination=${lat},${lng}&travelmode=driving`,
+                '_blank'
+              );
+            } else {
+              toast.error(t.coordinatesUnavailable);
+            }
+          }}
+          className="flex items-center justify-center gap-1.5 bg-brand-winnersNavy text-white py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide hover:opacity-90 transition-opacity"
+        >
+          <Navigation size={11} className="fill-white" /> {t.route}
+        </button>
       </div>
     </div>
   );
@@ -100,12 +313,18 @@ const WSFLocatorPage = () => {
   const [hasSearched, setHasSearched]   = useState(false);
   const [userPosition, setUserPosition] = useState(null);
   const [activeType, setActiveType]     = useState('cellule');
+  const [lang, setLang]                 = useState(() => localStorage.getItem('wsf-language') || 'fr');
+
+  const t = translations[lang];
+
+  const toggleLanguage = () => {
+    const newLang = lang === 'fr' ? 'en' : 'fr';
+    setLang(newLang);
+    localStorage.setItem('wsf-language', newLang);
+  };
 
   const handleGeolocate = () => {
-    if (!navigator.geolocation) {
-      toast.error("Votre navigateur ne supporte pas la géolocalisation.");
-      return;
-    }
+    if (!navigator.geolocation) { toast.error(t.geolocationNotSupported); return; }
     setLoading(true);
     setHasSearched(true);
     setCells([]);
@@ -124,7 +343,7 @@ const WSFLocatorPage = () => {
           setCells(Array.isArray(data) ? data : []);
         } catch (err) {
           console.error("Erreur API:", err);
-          toast.error("Impossible de récupérer les données.");
+          toast.error(t.unableToFetch);
         } finally {
           setLoading(false);
         }
@@ -136,11 +355,11 @@ const WSFLocatorPage = () => {
 
   const handleGPSError = (error) => {
     const messages = {
-      [error.PERMISSION_DENIED]:    "Accès refusé. Veuillez autoriser la localisation.",
-      [error.POSITION_UNAVAILABLE]: "Signal GPS introuvable.",
-      [error.TIMEOUT]:              "La demande a expiré.",
+      [error.PERMISSION_DENIED]:    t.permissionDenied,
+      [error.POSITION_UNAVAILABLE]: t.gpsUnavailable,
+      [error.TIMEOUT]:              t.timeout,
     };
-    toast.error(messages[error.code] || "Une erreur GPS est survenue.");
+    toast.error(messages[error.code] || t.gpsError);
   };
 
   const handleTypeChange = (type) => {
@@ -149,9 +368,10 @@ const WSFLocatorPage = () => {
     setHasSearched(false);
   };
 
-  const isSatellite = activeType === 'satellite';
-  const typeLabel   = isSatellite ? 'satellite'  : 'cellule';
-  const typeLabelP  = isSatellite ? 'satellites' : 'cellules';
+  const isSatellite  = activeType === 'satellite';
+  const typeLabel    = isSatellite ? t.satellites.slice(0, -1).toLowerCase() : t.cells.slice(0, -1).toLowerCase();
+  const typeLabelP   = isSatellite ? t.satellites.toLowerCase() : t.cells.toLowerCase();
+  const accentColor  = isSatellite ? 'bg-[#1A5276]' : 'bg-brand-winnersRed';
 
   return (
     <div className="min-h-screen relative font-sans overflow-x-hidden bg-brand-winnersNavy">
@@ -159,172 +379,114 @@ const WSFLocatorPage = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 z-[1]" />
 
       <div className="relative z-10 flex flex-col min-h-screen">
-        <main className="max-w-md mx-auto p-6 pt-20 pb-24 w-full">
+        <main className="w-full max-w-lg mx-auto px-4 pt-14 pb-20">
 
-          {/* ── Titre ──────────────────────────────────────────────────────── */}
-          <div className="text-center mb-10 space-y-3">
-            <h2 className="text-brand-winnersGold font-bold text-xs uppercase tracking-[0.4em] drop-shadow-lg">
-              Répertoire Officiel
-            </h2>
-            <h1 className="text-white text-4xl font-black tracking-tighter drop-shadow-2xl leading-none">
-              WINNERS CHAPEL <br />
-              <span className="text-brand-winnersRed text-3xl">AKOUEDO-GOSHEN</span>
-            </h1>
+          {/* Bouton langue */}
+          <div className="flex justify-end mb-5">
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-3 py-1.5 text-white/75 hover:bg-white/18 transition-all duration-200"
+            >
+              <Globe size={12} className="text-brand-winnersGold" />
+              <span className="text-[9px] font-black uppercase tracking-widest">
+                {lang === 'fr' ? 'EN' : 'FR'}
+              </span>
+            </button>
           </div>
 
-          {/* ── Toggle Cellule / Satellite ─────────────────────────────────── */}
-          <div className="flex bg-white/10 rounded-3xl p-1.5 mb-6 border border-white/10 backdrop-blur-sm">
+          {/* Titre */}
+          <div className="text-center mb-7">
+            <p className="text-brand-winnersGold text-[9px] font-black uppercase tracking-[0.35em] mb-2 drop-shadow">
+              {t.title}
+            </p>
+            <h1 className="text-white text-2xl font-black tracking-tight leading-snug drop-shadow-xl">
+              {t.churchName}
+            </h1>
+            <p className="text-brand-winnersRed text-lg font-black tracking-tight mt-0.5">
+              {t.location}
+            </p>
+          </div>
+
+          {/* Toggle Cellule / Satellite */}
+          <div className="flex bg-white/8 rounded-2xl p-1 mb-5 border border-white/8 backdrop-blur-sm max-w-xs mx-auto">
             <button
               onClick={() => handleTypeChange('cellule')}
-              className={`flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl text-xs font-black uppercase tracking-widest transition-all duration-300 ${
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all duration-250 ${
                 activeType === 'cellule'
-                  ? 'bg-brand-winnersRed text-white shadow-lg shadow-red-900/40'
-                  : 'text-white/40'
+                  ? 'bg-brand-winnersRed text-white shadow-md shadow-red-900/30'
+                  : 'text-white/35 hover:text-white/55'
               }`}
             >
-              <Home size={15} />
-              Cellules
+              <Home size={12} /> {t.cells}
             </button>
             <button
               onClick={() => handleTypeChange('satellite')}
-              className={`flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl text-xs font-black uppercase tracking-widest transition-all duration-300 ${
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all duration-250 ${
                 activeType === 'satellite'
-                  ? 'bg-brand-winnersNavy text-white shadow-lg border border-white/20'
-                  : 'text-white/40'
+                  ? 'bg-[#1A5276] text-white shadow-md border border-white/15'
+                  : 'text-white/35 hover:text-white/55'
               }`}
             >
-              <Radio size={15} />
-              Satellites
+              <Radio size={12} /> {t.satellites}
             </button>
           </div>
 
-          {/* ── Horaires (visibles dès le basculement) ─────────────────────── */}
-          <ScheduleBanner isSatellite={isSatellite} />
+          {/* Horaires */}
+          <ScheduleBanner isSatellite={isSatellite} lang={lang} />
 
-          {/* ── Bouton géolocalisation ─────────────────────────────────────── */}
+          {/* Bouton géolocalisation */}
           <button
             onClick={handleGeolocate}
             disabled={loading}
-            className={`w-full flex items-center justify-center gap-4 py-5 rounded-3xl font-black text-sm uppercase tracking-widest shadow-2xl active:scale-95 transition-all text-white ${
-              isSatellite ? 'bg-[#1A5276]' : 'bg-brand-winnersRed'
-            } ${loading ? 'opacity-70' : ''}`}
+            className={`w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-black text-[10px] uppercase tracking-widest text-white transition-all active:scale-[0.98] shadow-lg mb-7 ${accentColor} ${
+              loading ? 'opacity-65 cursor-not-allowed' : 'hover:opacity-90'
+            }`}
           >
-            {loading ? <LocateFixed size={24} className="animate-spin" /> : <MapPin size={24} />}
-            {loading ? `Recherche des ${typeLabelP}...` : `Trouver un ${typeLabel} proche`}
+            {loading
+              ? <LocateFixed size={16} className="animate-spin" />
+              : <MapPin size={16} />
+            }
+            {loading
+              ? t.searching.replace('{type}', typeLabelP)
+              : t.findNearby.replace('{type}', typeLabel)
+            }
           </button>
 
-          {/* ── Résultats ───────────────────────────────────────────────────── */}
-          <div className="space-y-5 mt-10">
+          {/* Résultats */}
+          {hasSearched && !loading && cells.length > 0 && (
+            <div className="flex items-center justify-between px-0.5 mb-3">
+              <span className="text-white/60 text-[9px] font-black uppercase tracking-widest">
+                {t.nearby.replace('{type}', typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1))}
+              </span>
+              <span className="bg-brand-winnersGold text-brand-winnersNavy text-[9px] font-black px-2.5 py-0.5 rounded-full">
+                {cells.length}
+              </span>
+            </div>
+          )}
 
-            {hasSearched && !loading && cells.length > 0 && (
-              <div className="flex justify-between items-center px-2 mb-2">
-                <h3 className="text-white font-bold text-xs uppercase tracking-widest opacity-80">
-                  {typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1)} à proximité
-                </h3>
-                <span className="bg-brand-winnersGold text-brand-winnersNavy text-[10px] font-black px-2 py-0.5 rounded-full">
-                  {cells.length}
-                </span>
-              </div>
-            )}
+          {hasSearched && !loading && cells.length === 0 && (
+            <p className="text-white/40 text-center text-xs py-10">
+              {t.noneFound.replace('{type}', typeLabel)}
+            </p>
+          )}
 
-            {hasSearched && !loading && cells.length === 0 && (
-              <p className="text-white/50 text-center text-sm py-8">
-                Aucun {typeLabel} trouvé à proximité.
-              </p>
-            )}
-
-            {!loading && cells.map(cell => {
-              const lat         = cell.lat      || cell.latitude;
-              const lng         = cell.lng      || cell.longitude;
-              const nom         = cell.nom      || cell.nom_cellule;
-              const quartier    = cell.quartier || "Quartier non spécifié";
-              const description = cell.description_position || null;
-              const leader      = cell.responsables?.find(r => r.role === 'leader')
-                               || cell.responsables?.[0];
-              const tel         = leader?.telephone;
-              const distance    = cell.distance_km;
-
-              return (
-                <div
-                  key={cell.id}
-                  className="bg-white/95 backdrop-blur-xl rounded-[2.5rem] p-6 shadow-2xl border border-white/50 animate-in fade-in slide-in-from-bottom-4 duration-500"
-                >
-                  <div className="flex items-center gap-5 mb-4">
-                    <div className="w-14 h-14 bg-brand-winnersNavy/5 rounded-2xl flex items-center justify-center text-brand-winnersNavy shrink-0">
-                      {isSatellite ? <Radio size={28} /> : <Home size={28} />}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h4 className="text-brand-winnersNavy font-black text-xl leading-tight tracking-tighter uppercase truncate">
-                        {nom}
-                      </h4>
-                      <div className="flex items-center gap-1 mt-1">
-                        <MapPin size={12} className={isSatellite ? 'text-[#1A5276] shrink-0' : 'text-brand-winnersRed shrink-0'} />
-                        <p className={`text-[10px] font-black uppercase tracking-wider truncate ${isSatellite ? 'text-[#1A5276]' : 'text-brand-winnersRed'}`}>
-                          {quartier}
-                        </p>
-                      </div>
-                    </div>
-                    {distance !== undefined && (
-                      <div className="flex flex-col items-center justify-center bg-brand-winnersNavy rounded-2xl px-3 py-2 shrink-0">
-                        <span className="text-brand-winnersGold font-black text-base leading-none">
-                          {distance < 1 ? `${Math.round(distance * 1000)} m` : `${distance.toFixed(1)} km`}
-                        </span>
-                        <span className="text-white/60 text-[9px] uppercase tracking-wider mt-0.5">de vous</span>
-                      </div>
-                    )}
-                  </div>
-
-                  {description && (
-                    <div className={`rounded-2xl px-4 py-3 mb-4 border-l-4 ${isSatellite ? 'bg-blue-50 border-[#1A5276]' : 'bg-red-50 border-brand-winnersRed'}`}>
-                      <p className="text-brand-winnersNavy text-xs font-semibold leading-relaxed">
-                        📍 {description}
-                      </p>
-                    </div>
-                  )}
-
-                  {leader && (
-                    <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-100">
-                      <div className="w-8 h-8 rounded-full bg-brand-winnersNavy flex items-center justify-center text-sm shrink-0">👤</div>
-                      <div>
-                        <p className="text-[9px] text-gray-400 font-bold uppercase tracking-widest">Leader</p>
-                        <p className="text-brand-winnersNavy text-sm font-black">{leader.nom_complet}</p>
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="grid grid-cols-2 gap-3">
-                    <a
-                      href={tel ? `tel:${tel}` : '#'}
-                      onClick={!tel ? (e) => { e.preventDefault(); toast.error("Numéro indisponible."); } : undefined}
-                      className="flex items-center justify-center gap-2 bg-gray-100 text-gray-700 py-4 rounded-2xl text-[10px] font-black uppercase transition-colors hover:bg-gray-200"
-                    >
-                      <Phone size={14} /> Appeler
-                    </a>
-                    <button
-                      onClick={() => {
-                        if (lat && lng && userPosition) {
-                          window.open(
-                            `https://www.google.com/maps/dir/?api=1&origin=${userPosition.lat},${userPosition.lng}&destination=${lat},${lng}&travelmode=driving`,
-                            '_blank'
-                          );
-                        } else {
-                          toast.error("Coordonnées indisponibles.");
-                        }
-                      }}
-                      className="flex items-center justify-center gap-2 bg-brand-winnersNavy text-white py-4 rounded-2xl text-[10px] font-black uppercase shadow-lg shadow-blue-900/20"
-                    >
-                      <Navigation size={14} className="fill-white" /> Itinéraire
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="space-y-3">
+            {!loading && cells.map(cell => (
+              <CellCard
+                key={cell.id}
+                cell={cell}
+                isSatellite={isSatellite}
+                userPosition={userPosition}
+                lang={lang}
+                t={t}
+              />
+            ))}
           </div>
         </main>
 
-        <footer className="mt-auto w-full p-8 text-center">
-          <p className="text-[10px] text-white/30 font-bold uppercase tracking-[0.4em]">
-            Jesus is Lord - AKOUEDO-Goshen @2026
+        <footer className="mt-auto w-full py-5 text-center">
+          <p className="text-[7px] text-white/25 font-bold uppercase tracking-[0.35em]">
+            {t.footer}
           </p>
         </footer>
       </div>

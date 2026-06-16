@@ -1,8 +1,8 @@
 import React from 'react';
 
 const BACKGROUND_IMAGES = [
-  '/images/bg/bg2.jpg',
-  '/images/bg/bg3.png',
+  '/images/bg/bg1.jpg',
+  '/images/bg/index.png',
 ];
 
 const AnimatedBackground = () => {
@@ -11,9 +11,11 @@ const AnimatedBackground = () => {
 
   return (
     <div className="fixed inset-0 z-0 overflow-hidden">
+      {/* Overlay plus sombre pour améliorer la lisibilité */}
+      <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
 
-      {/* Overlay léger (optionnel) */}
-      <div className="absolute inset-0 bg-white/5 z-10 pointer-events-none"></div>
+      {/* Filtre de flou sur l'ensemble du fond */}
+      <div className="absolute inset-0 backdrop-blur-sm z-[5] pointer-events-none"></div>
 
       {BACKGROUND_IMAGES.map((image, index) => (
         <div
