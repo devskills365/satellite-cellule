@@ -167,7 +167,7 @@ function getElargissementWeek(year, month) {
   const nm = (month + 1) % 12;
   const ny = month === 11 ? year + 1 : year;
   const first = new Date(ny, nm, 1);
-  const skip = (3 - first.getDay() + 7) % 7;
+  const skip = (3 - first.getDay() + 7) % 7 + 1;
   const wedDate = skip === 0 ? 8 : 1;
   const wed = new Date(ny, nm, wedDate);
   return [
@@ -311,10 +311,10 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
       </div>
 
       {/* Description */}
-      {translatedDescription && (
+      {description && (
         <div className={`${descBg} rounded-lg px-3 py-2 mb-3`}>
           <p className="text-brand-winnersNavy text-[10px] font-semibold leading-relaxed">
-            {translatedDescription}
+            <AutoTranslate text={description} targetLang={lang} />
           </p>
         </div>
       )}

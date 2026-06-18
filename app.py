@@ -94,7 +94,36 @@ api.add_resource(WSFCellResource,           '/api/wsf/cells', '/api/wsf/cells/<s
 api.add_resource(WSFUserResource,           '/api/wsf/servants', '/api/wsf/servants/<string:user_id>')
 
 
+from deep_translator import GoogleTranslator
 
+def traduire_dictionnaire_auto(data_dict, target_lang='fr'):
+    """
+    Traduit automatiquement les valeurs textuelles d'un dictionnaire.
+    Si target_lang est 'fr', on renvoie les données natives sans consommer d'API.
+    """
+    if target_lang == 'fr':
+        return data_dict  # Vos données sont déjà en français natif
+        
+    # Initialisation du traducteur de Français à Anglais
+    translator = GoogleTranslator(source='fr', target='en')
+    
+    translated_dict = {}
+    for key, value in data_dict.items():
+        # On ne traduit que les chaînes de caractères (le texte)
+        # On évite de traduire les clés techniques ou les valeurs numériques
+        if isinstance(value, str) and key not in ['id', '_id', 'lat', 'lng', 'geom', 'email', 'url']:
+            try:
+                # Traduction automatique à la volée
+                translated_dict[key] = translator.translate(value)
+            except Exception as e:
+                # En cas d'erreur réseau de l'API de traduction, on garde la valeur d'origine
+                print(f"Erreur de traduction pour la clé {key}: {e}")
+                translated_dict[key] = value
+        else:
+            # On conserve les nombres, listes ou ID intacts
+            translated_dict[key] = value
+            
+    return translated_dict
 
 
 if __name__ == '__main__':
