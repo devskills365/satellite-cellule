@@ -189,6 +189,13 @@ function fmtDayName(date, lang = "fr") {
   });
 }
 
+// ── Composant AutoTranslate ───────────────────────────────────────────────────
+
+function AutoTranslate({ text, targetLang }) {
+  const translated = translateDescription(text, targetLang);
+  return <>{translated || text}</>;
+}
+
 // ── Bandeau horaire ───────────────────────────────────────────────────────────
 
 function ScheduleBanner({ isSatellite, lang }) {
@@ -220,12 +227,12 @@ function ScheduleBanner({ isSatellite, lang }) {
     <div className="flex flex-col gap-2 mb-4">
       <div className="flex items-center justify-between gap-2 bg-white/95 backdrop-blur-sm border border-white/30 rounded-xl px-3 py-2.5 shadow-sm">
         <div className="flex items-center gap-2">
-          <Radio size={13} className="text-brand-winnersNavy shrink-0" />
+          <Radio size={13} className="text-brand-winnersRed shrink-0" />
           <span className="text-gray-800 text-[11px] font-bold">
             {t.allWednesdays}
           </span>
         </div>
-        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersNavy/10 text-brand-winnersNavy whitespace-nowrap">
+        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersRed/12 text-brand-winnersRed whitespace-nowrap">
           <Clock size={9} /> 18h00 – 20h00
         </span>
       </div>
@@ -272,16 +279,19 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
   const tel = rawTel ? formatPhoneNumber(rawTel) : null;
   const distance = cell.distance_km;
 
+  // URL de l'avatar par défaut
+  const defaultAvatar = "https://img.icons8.com/fluency/96/user-male-circle.png";
+  const leaderAvatar = leader?.photo || leader?.avatar || defaultAvatar;
+
   const accentRed = "text-brand-winnersRed";
-  const accentBlue = "text-[#1A5276]";
-  const accent = isSatellite ? accentBlue : accentRed;
-  const descBg = isSatellite ? "bg-blue-50" : "bg-red-50";
+  const accent = "text-brand-winnersRed";
+  const descBg = isSatellite ? "bg-red-50" : "bg-red-50";
 
   return (
     <div className="bg-white rounded-2xl p-4 shadow-lg border border-white/80 animate-in fade-in slide-in-from-bottom-3 duration-400">
       {/* En-tête */}
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-9 h-9 rounded-xl bg-brand-winnersNavy/6 flex items-center justify-center text-brand-winnersNavy shrink-0">
+        <div className="w-9 h-9 rounded-xl bg-brand-winnersRed/10 flex items-center justify-center text-brand-winnersRed shrink-0">
           {isSatellite ? <Radio size={17} /> : <Home size={17} />}
         </div>
         <div className="flex-1 min-w-0">
@@ -289,17 +299,15 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
             {nom}
           </h4>
           <div className="flex items-center gap-1 mt-0.5">
-            <MapPin size={9} className={`${accent} shrink-0`} />
-            <p
-              className={`text-[9px] font-black uppercase tracking-wider truncate ${accent}`}
-            >
+            <MapPin size={9} className="text-brand-winnersRed shrink-0" />
+            <p className="text-[9px] font-black uppercase tracking-wider truncate text-brand-winnersRed">
               {quartier}
             </p>
           </div>
         </div>
         {distance !== undefined && (
           <div className="bg-brand-winnersNavy rounded-xl px-2.5 py-2 text-center shrink-0">
-            <span className="text-brand-winnersGold font-black text-sm leading-none block">
+            <span className="text-white font-black text-sm leading-none block">
               {distance < 1
                 ? `${Math.round(distance * 1000)} m`
                 : `${distance.toFixed(1)} km`}
@@ -313,7 +321,7 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
 
       {/* Description */}
       {description && (
-        <div className={`${descBg} rounded-lg px-3 py-2 mb-3`}>
+        <div className="bg-red-50 rounded-lg px-3 py-2 mb-3">
           <p className="text-brand-winnersNavy text-[10px] font-semibold leading-relaxed">
             <AutoTranslate text={description} targetLang={lang} />
           </p>
@@ -323,8 +331,22 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
       {/* Leader */}
       {leader?.nom_complet && (
         <div className="flex items-center gap-2.5 pb-3 border-b border-gray-100 mb-3">
-          <div className="w-7 h-7 rounded-full bg-brand-winnersNavy flex items-center justify-center text-xs shrink-0 select-none">
-            👤
+          <div className="w-7 h-7 rounded-full bg-brand-winnersRed flex items-center justify-center text-xs shrink-0 select-none overflow-hidden">
+            {leaderAvatar ? (
+              <img 
+                src={leaderAvatar} 
+                alt={leader.nom_complet}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = defaultAvatar;
+                }}
+              />
+            ) : (
+              <span className="text-white font-bold text-[10px]">
+                {leader.nom_complet.charAt(0).toUpperCase()}
+              </span>
+            )}
           </div>
           <div className="min-w-0 flex-1">
             <p className="text-[7px] text-gray-400 font-bold uppercase tracking-widest">
@@ -373,7 +395,7 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
               toast.error(t.coordinatesUnavailable);
             }
           }}
-          className="flex items-center justify-center gap-1.5 bg-brand-winnersNavy text-white py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide hover:opacity-90 transition-opacity"
+          className="flex items-center justify-center gap-1.5 bg-brand-winnersRed text-white py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide hover:opacity-90 transition-opacity"
         >
           <Navigation size={11} className="fill-white" /> {t.route}
         </button>
@@ -460,7 +482,7 @@ const WSFLocatorPage = () => {
   const typeLabelP = isSatellite
     ? t.satellites.toLowerCase()
     : t.cells.toLowerCase();
-  const accentColor = isSatellite ? "bg-[#1A5276]" : "bg-brand-winnersRed";
+  const accentColor = isSatellite ? "bg-brand-winnersRed" : "bg-brand-winnersRed";
 
   return (
     <div className="min-h-screen relative font-sans overflow-x-hidden bg-brand-winnersNavy">
@@ -511,7 +533,7 @@ const WSFLocatorPage = () => {
               onClick={() => handleTypeChange("satellite")}
               className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all duration-250 ${
                 activeType === "satellite"
-                  ? "bg-[#1A5276] text-white shadow-md border border-white/15"
+                  ? "bg-brand-winnersRed text-white shadow-md shadow-red-900/30"
                   : "text-white/35 hover:text-white/55"
               }`}
             >
@@ -544,10 +566,13 @@ const WSFLocatorPage = () => {
           {hasSearched && !loading && cells.length > 0 && (
             <div className="flex items-center justify-between px-0.5 mb-3">
               <span className="text-white/60 text-[9px] font-black uppercase tracking-widest">
-                {t.nearby.replace(
-                  "{type}",
-                  typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
-                )}
+                {t.nearby ? 
+                  t.nearby.replace(
+                    "{type}",
+                    typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
+                  ) : 
+                  `${typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1)} à proximité`
+                }
               </span>
               <span className="bg-brand-winnersGold text-brand-winnersNavy text-[9px] font-black px-2.5 py-0.5 rounded-full">
                 {cells.length}
