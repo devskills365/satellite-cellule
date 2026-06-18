@@ -13,7 +13,6 @@ import {
 import { wsfService } from "../../api/axiosConfig";
 import AnimatedBackground from "../../components/wsf/AnimatedBackground";
 import { toast } from "react-hot-toast";
-import { AutoTranslate} from "../../components/translator"
 
 // ── Traductions ──────────────────────────────────────────────────────────────
 
@@ -168,7 +167,7 @@ function getElargissementWeek(year, month) {
   const nm = (month + 1) % 12;
   const ny = month === 11 ? year + 1 : year;
   const first = new Date(ny, nm, 1);
-  const skip = (3 - first.getDay() + 7) % 7 + 1;
+  const skip = ((3 - first.getDay() + 7) % 7) + 1;
   const wedDate = skip === 0 ? 8 : 1;
   const wed = new Date(ny, nm, wedDate);
   return [
@@ -280,7 +279,8 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
   const distance = cell.distance_km;
 
   // URL de l'avatar par défaut
-  const defaultAvatar = "https://img.icons8.com/fluency/96/user-male-circle.png";
+  const defaultAvatar =
+    "https://img.icons8.com/fluency/96/user-male-circle.png";
   const leaderAvatar = leader?.photo || leader?.avatar || defaultAvatar;
 
   const accentRed = "text-brand-winnersRed";
@@ -333,8 +333,8 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
         <div className="flex items-center gap-2.5 pb-3 border-b border-gray-100 mb-3">
           <div className="w-7 h-7 rounded-full bg-brand-winnersRed flex items-center justify-center text-xs shrink-0 select-none overflow-hidden">
             {leaderAvatar ? (
-              <img 
-                src={leaderAvatar} 
+              <img
+                src={leaderAvatar}
                 alt={leader.nom_complet}
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -482,7 +482,9 @@ const WSFLocatorPage = () => {
   const typeLabelP = isSatellite
     ? t.satellites.toLowerCase()
     : t.cells.toLowerCase();
-  const accentColor = isSatellite ? "bg-brand-winnersRed" : "bg-brand-winnersRed";
+  const accentColor = isSatellite
+    ? "bg-brand-winnersRed"
+    : "bg-brand-winnersRed";
 
   return (
     <div className="min-h-screen relative font-sans overflow-x-hidden bg-brand-winnersNavy">
@@ -566,13 +568,12 @@ const WSFLocatorPage = () => {
           {hasSearched && !loading && cells.length > 0 && (
             <div className="flex items-center justify-between px-0.5 mb-3">
               <span className="text-white/60 text-[9px] font-black uppercase tracking-widest">
-                {t.nearby ? 
-                  t.nearby.replace(
-                    "{type}",
-                    typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
-                  ) : 
-                  `${typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1)} à proximité`
-                }
+                {t.nearby
+                  ? t.nearby.replace(
+                      "{type}",
+                      typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
+                    )
+                  : `${typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1)} à proximité`}
               </span>
               <span className="bg-brand-winnersGold text-brand-winnersNavy text-[9px] font-black px-2.5 py-0.5 rounded-full">
                 {cells.length}
