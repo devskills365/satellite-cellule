@@ -13,7 +13,7 @@ import {
 import { wsfService } from "../../api/axiosConfig";
 import AnimatedBackground from "../../components/wsf/AnimatedBackground";
 import { toast } from "react-hot-toast";
-import { AutoTranslate} from "../../components/translator"
+import { AutoTranslate } from "../../components/translator";
 
 // ── Traductions ──────────────────────────────────────────────────────────────
 
@@ -22,25 +22,20 @@ const translations = {
     title: "Répertoire Officiel",
     churchName: "WINNERS' CHAPEL INTERNATIONAL",
     location: "AKOUEDO-GOSHEN",
-    // 1. Labels pour les boutons (sans article, première lettre majuscule)
     cellLabel: "Cellules de maison",
     satelliteLabel: "Centres satellites",
-
-    // 2. Variables pour les phrases dynamiques (avec article)
     cells: "une cellule ",
     satellites: "un satellite ",
-
-    // 3. Modèles de phrases
     findNearby: "Trouver {type} à proximité",
     searching: "Recherche {type} en cours...",
     noneFound: "Aucun(e) {type} trouvé(e) à proximité.",
+    nearby: "{type} à proximité",
     leader: "Leader",
     call: "Appeler",
     route: "Itinéraire",
     numberUnavailable: "Numéro indisponible.",
     coordinatesUnavailable: "Coordonnées indisponibles.",
-    geolocationNotSupported:
-      "Votre navigateur ne supporte pas la géolocalisation.",
+    geolocationNotSupported: "Votre navigateur ne supporte pas la géolocalisation.",
     unableToFetch: "Impossible de récupérer les données.",
     permissionDenied: "Accès refusé. Veuillez autoriser la localisation.",
     gpsUnavailable: "Signal GPS introuvable.",
@@ -57,48 +52,32 @@ const translations = {
     french: "Français",
     english: "English",
     descriptions: {
-      "Au sein du Foyer des jeunes de Adjahui":
-        "Au sein du Foyer des jeunes de Adjahui",
+      "Au sein du Foyer des jeunes de Adjahui": "Au sein du Foyer des jeunes de Adjahui",
       "Dans le centre Marie Rose Guiraud": "Dans le centre Marie Rose Guiraud",
-      "Au sein de la cantine de l'école primaire publique D'ANAN":
-        "Au sein de la cantine de l'école primaire publique D'ANAN",
-      "Au sein du foyer des jeunes d'Adjahui":
-        "Au sein du foyer des jeunes d'Adjahui",
-      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées":
-        "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées",
-      "Au sein du Collège Jean Paul Sartre":
-        "Au sein du Collège Jean Paul Sartre",
-      "Abatta village au sein de l'école privée Kimyl School":
-        "Abatta village au sein de l'école privée Kimyl School",
-      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP":
-        "Au sein du restaurant Canaan Repas non loin de la policlinique GMP",
-      "Au sein du collège privé Mère Elisa d'Akouédo":
-        "Au sein du collège privé Mère Elisa d'Akouédo",
-      "Au sein de l'ancienne Chefferie d'Anoumanbo":
-        "Au sein de l'ancienne Chefferie d'Anoumanbo",
-      "au sein du centre pilote de port bouet":
-        "au sein du centre pilote de port bouet",
-      "Au bas de l'immeuble de l'ancien Red Bar":
-        "Au bas de l'immeuble de l'ancien Red Bar",
+      "Au sein de la cantine de l'école primaire publique D'ANAN": "Au sein de la cantine de l'école primaire publique D'ANAN",
+      "Au sein du foyer des jeunes d'Adjahui": "Au sein du foyer des jeunes d'Adjahui",
+      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées": "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées",
+      "Au sein du Collège Jean Paul Sartre": "Au sein du Collège Jean Paul Sartre",
+      "Abatta village au sein de l'école privée Kimyl School": "Abatta village au sein de l'école privée Kimyl School",
+      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP": "Au sein du restaurant Canaan Repas non loin de la policlinique GMP",
+      "Au sein du collège privé Mère Elisa d'Akouédo": "Au sein du collège privé Mère Elisa d'Akouédo",
+      "Au sein de l'ancienne Chefferie d'Anoumanbo": "Au sein de l'ancienne Chefferie d'Anoumanbo",
+      "au sein du centre pilote de port bouet": "au sein du centre pilote de port bouet",
+      "Au bas de l'immeuble de l'ancien Red Bar": "Au bas de l'immeuble de l'ancien Red Bar",
     },
   },
   en: {
     title: "Official Directory",
     churchName: "WINNERS' CHAPEL INTERNATIONAL",
     location: "AKOUEDO-GOSHEN",
-    // 1. Labels pour les boutons (sans article, première lettre majuscule)
     cellLabel: "Home Cells",
-    satelliteLabel: "Satellite centers",
-
-    // 2. Variables pour les phrases dynamiques (avec article)
+    satelliteLabel: "Satellite Centers",
     cells: "cell ",
     satellites: "satellite ",
-
-    // 3. Modèles de phrases
     findNearby: "Find a {type} nearby",
     searching: "Searching for {type}...",
-    nearby: "{type} nearby",
     noneFound: "No {type} found nearby.",
+    nearby: "{type} nearby",
     leader: "Leader",
     call: "Call",
     route: "Route",
@@ -123,24 +102,16 @@ const translations = {
     descriptions: {
       "Au sein du Foyer des jeunes de Adjahui": "At the Adjahui Youth Center",
       "Dans le centre Marie Rose Guiraud": "In the Marie Rose Guiraud center",
-      "Au sein de la cantine de l'école primaire publique D'ANAN":
-        "At the D'ANAN public primary school cafeteria",
+      "Au sein de la cantine de l'école primaire publique D'ANAN": "At the D'ANAN public primary school cafeteria",
       "Au sein du foyer des jeunes d'Adjahui": "At the Adjahui youth center",
-      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées":
-        "At Wellbeing Resort, next to the Scarabées school group",
+      "Au sein de Wellbeing Resort, à côté du groupe scolaire les scarabées": "At Wellbeing Resort, next to the Scarabées school group",
       "Au sein du Collège Jean Paul Sartre": "At the Jean Paul Sartre College",
-      "Abatta village au sein de l'école privée Kimyl School":
-        "Abatta village at Kimyl School private school",
-      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP":
-        "At Canaan Repas restaurant, near the GMP polyclinic",
-      "Au sein du collège privé Mère Elisa d'Akouédo":
-        "At Mère Elisa private college in Akouédo",
-      "Au sein de l'ancienne Chefferie d'Anoumanbo":
-        "At the former Anoumanbo Chiefdom",
-      "au sein du centre pilote de port bouet":
-        "at the Port Bouet pilot center",
-      "Au bas de l'immeuble de l'ancien Red Bar":
-        "At the bottom of the old Red Bar building",
+      "Abatta village au sein de l'école privée Kimyl School": "Abatta village at Kimyl School private school",
+      "Au sein du restaurant Canaan Repas non loin de la policlinique GMP": "At Canaan Repas restaurant, near the GMP polyclinic",
+      "Au sein du collège privé Mère Elisa d'Akouédo": "At Mère Elisa private college in Akouédo",
+      "Au sein de l'ancienne Chefferie d'Anoumanbo": "At the former Anoumanbo Chiefdom",
+      "au sein du centre pilote de port bouet": "at the Port Bouet pilot center",
+      "Au bas de l'immeuble de l'ancien Red Bar": "At the bottom of the old Red Bar building",
     },
   },
 };
@@ -159,8 +130,7 @@ function formatPhoneNumber(phone) {
   if (cleaned.startsWith("+225")) return cleaned;
   if (cleaned.startsWith("225")) return "+" + cleaned;
   if (cleaned.startsWith("0")) return "+225" + cleaned.substring(1);
-  if (cleaned.length === 10 && /^[0-9]{10}$/.test(cleaned))
-    return "+225" + cleaned;
+  if (cleaned.length === 10 && /^[0-9]{10}$/.test(cleaned)) return "+225" + cleaned;
   return cleaned;
 }
 
@@ -195,7 +165,6 @@ function ScheduleBanner({ isSatellite, lang }) {
   const now = new Date();
   const [, jeudi, vendredi] = useMemo(
     () => getElargissementWeek(now.getFullYear(), now.getMonth()),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   );
   const t = translations[lang];
@@ -220,12 +189,12 @@ function ScheduleBanner({ isSatellite, lang }) {
     <div className="flex flex-col gap-2 mb-4">
       <div className="flex items-center justify-between gap-2 bg-white/95 backdrop-blur-sm border border-white/30 rounded-xl px-3 py-2.5 shadow-sm">
         <div className="flex items-center gap-2">
-          <Radio size={13} className="text-brand-winnersNavy shrink-0" />
+          <Radio size={13} className="text-[#1A5276] shrink-0" />
           <span className="text-gray-800 text-[11px] font-bold">
             {t.allWednesdays}
           </span>
         </div>
-        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-brand-winnersNavy/10 text-brand-winnersNavy whitespace-nowrap">
+        <span className="inline-flex items-center gap-1 text-[9px] font-bold px-2.5 py-1 rounded-full bg-[#1A5276]/10 text-[#1A5276] whitespace-nowrap">
           <Clock size={9} /> 18h00 – 20h00
         </span>
       </div>
@@ -262,12 +231,7 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
   const nom = cell.nom || cell.nom_cellule;
   const quartier = cell.quartier || "Quartier non spécifié";
   const description = cell.description_position || null;
-  const translatedDescription = description
-    ? translateDescription(description, lang)
-    : null;
-  const leader =
-    cell.responsables?.find((r) => r.role === "leader") ||
-    cell.responsables?.[0];
+  const leader = cell.responsables?.find((r) => r.role === "leader") || cell.responsables?.[0];
   const rawTel = leader?.telephone || null;
   const tel = rawTel ? formatPhoneNumber(rawTel) : null;
   const distance = cell.distance_km;
@@ -275,13 +239,17 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
   const accentRed = "text-brand-winnersRed";
   const accentBlue = "text-[#1A5276]";
   const accent = isSatellite ? accentBlue : accentRed;
-  const descBg = isSatellite ? "bg-blue-50" : "bg-red-50";
+  const descBg = isSatellite ? "bg-[#1A5276]/10" : "bg-red-50";
+  const iconBg = isSatellite ? "bg-[#1A5276]/10" : "bg-brand-winnersRed/10";
+  const iconColor = isSatellite ? "text-[#1A5276]" : "text-brand-winnersRed";
+  const btnBg = isSatellite ? "bg-[#1A5276]" : "bg-brand-winnersRed";
+  const distanceBg = isSatellite ? "bg-[#1A5276]" : "bg-brand-winnersNavy";
 
   return (
     <div className="bg-white rounded-2xl p-4 shadow-lg border border-white/80 animate-in fade-in slide-in-from-bottom-3 duration-400">
       {/* En-tête */}
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-9 h-9 rounded-xl bg-brand-winnersNavy/6 flex items-center justify-center text-brand-winnersNavy shrink-0">
+        <div className={`w-9 h-9 rounded-xl ${iconBg} flex items-center justify-center ${iconColor} shrink-0`}>
           {isSatellite ? <Radio size={17} /> : <Home size={17} />}
         </div>
         <div className="flex-1 min-w-0">
@@ -290,16 +258,14 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
           </h4>
           <div className="flex items-center gap-1 mt-0.5">
             <MapPin size={9} className={`${accent} shrink-0`} />
-            <p
-              className={`text-[9px] font-black uppercase tracking-wider truncate ${accent}`}
-            >
+            <p className={`text-[9px] font-black uppercase tracking-wider truncate ${accent}`}>
               {quartier}
             </p>
           </div>
         </div>
         {distance !== undefined && (
-          <div className="bg-brand-winnersNavy rounded-xl px-2.5 py-2 text-center shrink-0">
-            <span className="text-brand-winnersGold font-black text-sm leading-none block">
+          <div className={`${distanceBg} rounded-xl px-2.5 py-2 text-center shrink-0`}>
+            <span className="text-white font-black text-sm leading-none block">
               {distance < 1
                 ? `${Math.round(distance * 1000)} m`
                 : `${distance.toFixed(1)} km`}
@@ -346,14 +312,7 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
       <div className="grid grid-cols-2 gap-2">
         <a
           href={tel ? `tel:${tel}` : "#"}
-          onClick={
-            !tel
-              ? (e) => {
-                  e.preventDefault();
-                  toast.error(t.numberUnavailable);
-                }
-              : undefined
-          }
+          onClick={!tel ? (e) => { e.preventDefault(); toast.error(t.numberUnavailable); } : undefined}
           className={`flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide transition-colors ${
             tel
               ? "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -373,7 +332,7 @@ function CellCard({ cell, isSatellite, userPosition, lang, t }) {
               toast.error(t.coordinatesUnavailable);
             }
           }}
-          className="flex items-center justify-center gap-1.5 bg-brand-winnersNavy text-white py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide hover:opacity-90 transition-opacity"
+          className={`flex items-center justify-center gap-1.5 ${btnBg} text-white py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-wide hover:opacity-90 transition-opacity`}
         >
           <Navigation size={11} className="fill-white" /> {t.route}
         </button>
@@ -390,9 +349,7 @@ const WSFLocatorPage = () => {
   const [hasSearched, setHasSearched] = useState(false);
   const [userPosition, setUserPosition] = useState(null);
   const [activeType, setActiveType] = useState("cellule");
-  const [lang, setLang] = useState(
-    () => localStorage.getItem("wsf-language") || "fr",
-  );
+  const [lang, setLang] = useState(() => localStorage.getItem("wsf-language") || "fr");
 
   const t = translations[lang];
 
@@ -454,12 +411,8 @@ const WSFLocatorPage = () => {
   };
 
   const isSatellite = activeType === "satellite";
-  const typeLabel = isSatellite
-    ? t.satellites.slice(0, -1).toLowerCase()
-    : t.cells.slice(0, -1).toLowerCase();
-  const typeLabelP = isSatellite
-    ? t.satellites.toLowerCase()
-    : t.cells.toLowerCase();
+  const typeLabel = isSatellite ? t.satellites.slice(0, -1).toLowerCase() : t.cells.slice(0, -1).toLowerCase();
+  const typeLabelP = isSatellite ? t.satellites.toLowerCase() : t.cells.toLowerCase();
   const accentColor = isSatellite ? "bg-[#1A5276]" : "bg-brand-winnersRed";
 
   return (
@@ -511,7 +464,7 @@ const WSFLocatorPage = () => {
               onClick={() => handleTypeChange("satellite")}
               className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all duration-250 ${
                 activeType === "satellite"
-                  ? "bg-[#1A5276] text-white shadow-md border border-white/15"
+                  ? "bg-[#1A5276] text-white shadow-md shadow-[#1A5276]/30"
                   : "text-white/35 hover:text-white/55"
               }`}
             >
@@ -544,9 +497,13 @@ const WSFLocatorPage = () => {
           {hasSearched && !loading && cells.length > 0 && (
             <div className="flex items-center justify-between px-0.5 mb-3">
               <span className="text-white/60 text-[9px] font-black uppercase tracking-widest">
-                {t.nearby.replace(
-                  "{type}",
-                  typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
+                {t.nearby ? (
+                  t.nearby.replace(
+                    "{type}",
+                    typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1),
+                  )
+                ) : (
+                  `${typeLabelP.charAt(0).toUpperCase() + typeLabelP.slice(1)} à proximité`
                 )}
               </span>
               <span className="bg-brand-winnersGold text-brand-winnersNavy text-[9px] font-black px-2.5 py-0.5 rounded-full">
