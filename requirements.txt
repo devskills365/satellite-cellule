@@ -16,3 +16,4 @@ flask_cors
 flask_mail
 flask_migrate
 dotenv
+deep-translator
