@@ -13,6 +13,7 @@ import {
 import { wsfService } from "../../api/axiosConfig";
 import AnimatedBackground from "../../components/wsf/AnimatedBackground";
 import { toast } from "react-hot-toast";
+import { AutoTranslate} from "../../components/translator"
 
 // ── Traductions ──────────────────────────────────────────────────────────────
 
